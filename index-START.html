@@ -44,6 +44,8 @@
 <script>
 const divs = document.querySelectorAll('div');
 
+// captures what was clicked from top to bottom 
+// and then the events are triggered from bottom to top as they bubble up
 function logText(e){
   console.log(this.classList.value);
   e.stopPropagation();
