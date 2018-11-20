@@ -12,7 +12,7 @@
       </div>
     </div>
   </div>
-
+<button>Button</button>
 <style>
   html {
     box-sizing: border-box;
@@ -40,9 +40,9 @@
   }
 </style>
 
-<button></button>
 <script>
 const divs = document.querySelectorAll('div');
+const button = document.querySelector("button");;
 
 // captures what was clicked from top to bottom 
 // and then the events are triggered from bottom to top as they bubble up
@@ -56,6 +56,10 @@ divs.forEach(div => {
     capture:false
   })
 });
+
+button.addEventListener("click", () => {
+  console.log("Button has been clicked");
+}, {once:true});
 
 </script>
 </body>
