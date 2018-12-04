@@ -60,7 +60,8 @@ divs.forEach(div => {
 button.addEventListener("click", () => {
   console.log("Button has been clicked");
 }, {once:true});
-
+// unbinding the event listener using {once:true} can be useful for 
+// store checkouts because you only want the customer to check out once
 </script>
 </body>
 </html>
