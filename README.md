@@ -24,8 +24,6 @@ divs.forEach(div => div.addEventListener('click', logText));
 
 ### The `capture` and `once`
 
-refernce: [here -> EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-
 ##### `capture`
 
 `capture` is a boolean that indicates that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.
